@@ -31,12 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin', # Le site d’administration. Vous l’utiliserez très bientôt.
+    'django.contrib.auth', # Un système d’authentification.
+    'django.contrib.contenttypes', #Une structure pour les types de contenu (content types).
+    'django.contrib.sessions', # Un cadre pour les sessions.
+    'django.contrib.messages', #  Un cadre pour l’envoi de messages.
+    'django.contrib.staticfiles', # Une structure pour la prise en charge des fichiers statiques.
+    'huntapp.apps.HuntappConfig',
+
 ]
 
 MIDDLEWARE = [
